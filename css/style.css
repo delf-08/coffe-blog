@@ -114,7 +114,7 @@ img{
 }
 
 .navegator-log{
-    padding-top: 2rem;
+    padding-top: 2rem;   
 }
 
 
@@ -213,3 +213,106 @@ img{
     margin-top: 3rem;
 }
 
+        /*Nosotros*/
+
+@media (min-width:768px){
+   .nosotros-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+   }
+}
+
+.nosotros-container__text{
+    font-family: var(--principal_font);
+    font-weight: 600;
+}
+
+.nosotros-container__heading{
+    font-weight: 700;
+    font-family: var(--heading_font);
+}
+
+        /*cursos*/
+
+@media (min-width:768px){
+   .container-curso{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3rem;
+   }
+}
+
+.container-curso{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgb(201, 198, 198);
+}
+
+.container-curso:last-of-type{
+    border-bottom: none;
+}
+
+.container-curso__list{
+    list-style: none;
+}
+
+.container-curso__p{
+    font-family: var(--principal_font);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.container-curso__span{
+    font-weight: 400;
+}
+
+        /*Entrada*/
+
+.heading-entrada{
+    font-family: var(--heading_font);
+    font-size: 4rem;
+}
+
+.container-entrada__text{
+    font-family: var(--principal_font);
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+        /*Formulario*/
+
+.contact-container__image{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+}       
+
+.contact-container__label{
+    font-family: var(--principal_font);
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact-container__form{
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    background-color: var(--white_color);
+    padding: 5rem;
+}
+
+.contact-container__input{
+    border: 1px solid rgb(151, 149, 149);
+}
+
+.camp{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-top: 1rem;
+}
+
+.camp--submit{
+    margin-top: 3rem;
+}
