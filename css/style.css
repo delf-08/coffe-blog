@@ -309,9 +309,17 @@ img{
 
 .camp{
     display: grid;
-    grid-template-columns: 20% 80%;
-    margin-top: 1rem;
+    grid-template-columns: 1;
 }
+
+@media (min-width:768px){
+    .camp{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        margin-top: 1rem;
+    }
+}   
+
 
 .camp--submit{
     margin-top: 3rem;
