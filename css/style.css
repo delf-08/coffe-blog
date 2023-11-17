@@ -296,6 +296,10 @@ img{
     text-align: center;
 }
 
+.contact-container__label:hover{
+    cursor: pointer;
+}
+
 .contact-container__form{
     margin: -5rem auto 0 auto;
     width: 95%;
@@ -312,6 +316,10 @@ img{
     grid-template-columns: 1;
 }
 
+.contact-container__input--info{
+    height: 4rem;
+}
+
 @media (min-width:768px){
     .camp{
         display: grid;
@@ -320,6 +328,9 @@ img{
     }
 }   
 
+.button--submit{
+    margin: 0 auto;
+}
 
 .camp--submit{
     margin-top: 3rem;
