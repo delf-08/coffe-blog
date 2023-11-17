@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- prefetch -->
+
+    <link rel="prefetch" href="entrada.html" as="document">
+
+    <!-- Preload -->
+
+    <link rel="preload" href="./css/normalize.css" as="style">
     <link rel="stylesheet" href="./css/normalize.css">
+
+    <link rel="preload" href="./css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Blog-Cafe</title>
 </head>
 <body>
@@ -42,7 +56,11 @@
             <!-- 1st article -->
             <article class="article">
                 <div class="article__image">
-                    <img src="./img/blog1.jpg" alt="blog image">
+                    <!-- el lazy loading hace que la imagen se descargue hasta que esta sea visible -->
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="./img/blog1.jpg" alt="blog image">
+                    </picture>
                 </div>
                 <div class="article__content">
                     <h4 class="no-margin">Tipos de grano de cafe</h4>
@@ -57,7 +75,10 @@
             <!-- 2nd artcile -->
             <article class="article">
                 <div class="article__image">
-                    <img src="./img/blog2.jpg" alt="blog image">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="./img/blog2.jpg" alt="blog image">
+                    </picture>
                 </div>
                 <div class="article__content">
                     <h4 class="no-margin">3 Deliciosas recetas de cafe</h4>
@@ -72,7 +93,10 @@
             <!-- 3rd article -->
             <article class="article">
                 <div class="article__image">
-                    <img src="./img/blog3.jpg" alt="blog image">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="./img/blog3.jpg" alt="blog image">
+                    </picture>
                 </div>
                 <div class="article__content">
                     <h4 class="no-margin">Beneficios del cafe</h4>
@@ -125,5 +149,7 @@
 
     </footer>
     
+    <script src="./js/modernizr.js"></script>
+
 </body>
 </html>
